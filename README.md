@@ -43,6 +43,14 @@ freetype2によるputText多言語対応
 ## Run Demo
 `python demo.py`
 
+## Performance
+ 約5倍の処理時間の違いがあります.
+
+`tests/perf.py`
+```
+ cv2.putText: 0.7011525s . Per Call 0.0701152ms
+  ft.putText: 3.5246640s . Per Call 0.3524664ms
+```
 ## cv2.getBuildInformation()
 ```
 General configuration for OpenCV 4.5.5 =====================================
