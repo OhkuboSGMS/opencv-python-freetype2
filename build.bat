@@ -31,6 +31,8 @@ rem fix freetype CMakeLists.txt setup.py
 cd  /d %CWD%
 copy CMakeLists.txt %BUILD%\opencv-python\opencv_contrib\modules\freetype\CMakeLists.txt
 copy setup.py %BUILD%\opencv-python\setup.py
+copy pyproject.toml %BUILD%\opencv-python\pyproject.toml
+
 
 cd /d %BUILD%
 rem copy freetype dlls
@@ -47,5 +49,7 @@ call pip wheel . --verbose
 
 call conda deactivate 
 call conda remove -n %ENV_NAME% --all -y
+
+copy opencv_contrib_freetype2_python-4.5.5.62-cp38-cp38-win_amd64.whl %CWD%
 cd /d %CWD%
 endlocal

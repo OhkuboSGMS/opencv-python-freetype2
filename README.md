@@ -22,6 +22,8 @@ freetype2によるputText多言語対応
 | freetype      | 2.11.1     |
 | harfbuzz      | 3.2.0      |
 | vcpkg         | 2022.02.23 |
+ | scikit-build | 0.13.1     |
+
 
 ---------------------------
 
